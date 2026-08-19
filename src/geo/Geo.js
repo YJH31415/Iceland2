@@ -1,0 +1,2 @@
+const R=6371008.8;
+export function advanceSphere(lat,lon,north,east){let p=lat*Math.PI/180,l=lon*Math.PI/180;p+=north/R;l+=east/(R*Math.max(Math.cos(p),1e-8));p=Math.max(-Math.PI/2+1e-9,Math.min(Math.PI/2-1e-9,p));l=((l+Math.PI)%(2*Math.PI)+2*Math.PI)%(2*Math.PI)-Math.PI;return{lat:p*180/Math.PI,lon:l*180/Math.PI}}

@@ -1,0 +1,10 @@
+html,body{margin:0;height:100%;overflow:hidden;font-family:system-ui,sans-serif;background:#07111c;color:#eef}
+#map{position:absolute;inset:0}
+#panel{position:absolute;top:14px;left:14px;width:330px;max-height:calc(100vh - 28px);overflow:auto;background:rgba(7,17,28,.93);border:1px solid #30465a;border-radius:12px;padding:16px;box-shadow:0 12px 40px #0008}
+h1{font-size:20px;margin:0 0 4px}h2{font-size:14px;margin:18px 0 8px}
+label{display:block;margin-top:18px;font-size:14px}
+input{width:100%;margin-top:8px}
+button{padding:9px 12px;border-radius:7px;border:1px solid #52677a;background:#13283a;color:white;cursor:pointer}
+button:disabled{opacity:.45;cursor:not-allowed}.buttons{display:flex;gap:8px;margin-top:12px}
+.muted{color:#9fb0bf}.small{font-size:11px}.alerts>div{padding:8px;border-radius:7px;margin:6px 0;background:#142333}
+.status{padding:8px}.verylow{border-left:5px solid #6d7f8c}.low{border-left:5px solid #4d9a68}.medium{border-left:5px solid #c8a33a}.high{border-left:5px solid #d76a3d}.veryhigh{border-left:5px solid #b83232}

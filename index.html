@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eyjafjallajökull 2010 Ash Transport</title>
+<link href="https://unpkg.com/maplibre-gl@5.9.0/dist/maplibre-gl.css" rel="stylesheet">
+<link href="./src/ui/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="map"></div>
+<aside id="panel">
+<h1>Eyjafjallajökull 2010</h1>
+<p class="muted">Lagrangian volcanic ash transport model</p>
+<label>분출 고도 <output id="heightValue">8000</output> m ASL
+<input id="heightSlider" type="range" min="3000" max="12000" step="250" value="8000"></label>
+<div class="buttons">
+<button id="start">시뮬레이션 시작</button>
+<button id="reset">Reset</button>
+</div>
+<div id="status">대기장 확인 중…</div>
+<div id="time"></div>
+<div class="alerts">
+<h2>항공 경보</h2>
+<div id="london"></div>
+<div id="paris"></div>
+<div id="frankfurt"></div>
+</div>
+<div class="legend">
+<h2>농도</h2>
+<div>Very low &lt; 0.2 mg/m³</div>
+<div>Low 0.2–2 mg/m³</div>
+<div>Medium 2–5 mg/m³</div>
+<div>High 5–10 mg/m³</div>
+<div>Very high &gt; 10 mg/m³</div>
+</div>
+<p class="muted small">항공 경보는 농도 기반 연구용 시각화이며 실제 운항 판단을 대체하지 않습니다.</p>
+</aside>
+<script src="https://unpkg.com/maplibre-gl@5.9.0/dist/maplibre-gl.js"></script>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
